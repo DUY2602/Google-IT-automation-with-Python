@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 def character_frequency(filename):
   """Counts the frequency of each character in the given file."""
   # First try to open the file
@@ -16,3 +14,4 @@ def character_frequency(filename):
   f.close() 
   return characters
 
+print(character_frequency("try_except.py"))

@@ -1,0 +1,24 @@
+--- cpu_usage.py	2025-09-01 05:59:26.315649300 +0700
++++ cpu_usage_fixed.py	2025-09-01 05:59:58.308716500 +0700
+@@ -1,10 +1,11 @@
+-import psutil
+-
+-def check_cpu_usage(percent):
+-    usage = psutil.cpu_percent()
+-    return usage < percent
+-
+-if not check_cpu_usage(75):
+-    print("ERROR! CPU is overloaded")
+-else:
++import psutil
++
++def check_cpu_usage(percent):
++    usage = psutil.cpu_percent(1)
++    print("DEBUG: usage: {}".format(usage))
++    return usage < percent
++
++if not check_cpu_usage(75):
++    print("ERROR! CPU is overloaded")
++else:
+     print("Everything ok")
+\ No newline at end of file

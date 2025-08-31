@@ -1,4 +1,4 @@
-from typing import List
+import unittest
 
 # Simple Cake class
 class Cake:
@@ -13,16 +13,6 @@ class Cake:
     def check_price(self) -> float:
         return self.base_price + len(self.toppings)  # Each topping adds 1
 
-
-# Example usage
-cake = Cake("Chocolate", 10)
-cake.add_topping("sprinkles")
-cake.add_topping("cherries")
-cake.check_price()  # 12
-
-
-
-import unittest
 
 class TestCake(unittest.TestCase):
 

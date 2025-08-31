@@ -1,4 +1,7 @@
+import unittest
+
 def validate_user(username, minlen):
+  # Handle expected error: username != string
   assert type(username) == str, "username must be a string"
   if minlen < 1:
     raise ValueError("minlen must be at least 1")
@@ -9,10 +12,6 @@ def validate_user(username, minlen):
     return False
   return True
 
-#!/usr/bin/env python3
-
-import unittest
-
 class TestValidateUser(unittest.TestCase):
   def test_valid(self):
     self.assertEqual(validate_user("validuser", 3), True)
@@ -22,9 +21,8 @@ class TestValidateUser(unittest.TestCase):
 
   def test_invalid_characters(self):
     self.assertEqual(validate_user("invalid_user", 1), False)
+
   def test_invalid_minlen(self):
     self.assertRaises(ValueError, validate_user, "user", -1)
 
-
-# Run the tests
 unittest.main()

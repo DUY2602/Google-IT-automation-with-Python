@@ -1,3 +1,5 @@
+import pytest
+
 class Cake:
     def __init__(self, name: str, base_price: float):
         self.name = name
@@ -10,8 +12,7 @@ class Cake:
     def check_price(self) -> float:
         return self.base_price + len(self.toppings)  # Each topping adds 1
 
-import pytest
-# Create a Calculator object 
+# Create a Cake object 
 @pytest.fixture
 def cake():
     return Cake("vanilla", 8)
@@ -20,6 +21,7 @@ def cake():
 def test_add_topping(cake):
     cake.add_topping("chocolate")
 
+    assert len(cake.toppings) == 1
     assert "chocolate" in cake.toppings
 
 def test_multiply(cake):
