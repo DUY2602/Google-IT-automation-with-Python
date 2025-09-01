@@ -1,0 +1,42 @@
+$ git init                         # Initialize a new local git repository
+
+$ git clone <URL>                  # Create a copy of a remote repo to local
+
+$ git config --global user.name "_name_"                   # Name of your Github account
+
+$ git config --global user.email "_email_"                 # Email used to register Github account
+
+$ nano README                      # Create a README.md file
+
+$ git status                       # Check the current status of repo (modified, untracked,... files)
+
+$ git add .                        # Add all the changes to staging area
+
+$ git commit -m "_message_"        # Commit the changes from staging to repo with a message
+
+$ git log                          # Show the commit history of the repo
+
+$ git diff _file_                  # Show the changes made to the file
+
+$ git pull <remote> <branch>       # Pull the changes made to remote repo
+
+$ git push <remote> <branch>       # Push the changes made to remote repo
+
+$ git branch                       # List all the branches in local repo
+
+$ git checkout <branch>            # Switch to specified branch
+
+$ git merge <branch>               # Merge changes from specified branch to current branch
+
+$ git remote -v                    # List all remote repos associated with local repo
+
+$ git reset <file>                 # Unstage changes in the specified files from staging area
+
+$ git tag   <name>                 # Create a tag at the current commit with the specified name
+
+$ git clean                        # Delete the untracked files
+
+$ git rm <file>                    # Remove specific file
+
+$ git mv <old_name> <new_name>     # Change the file name
+
