@@ -1,0 +1,23 @@
+1. Identify the Problem:
+    + Gather infomation from logs, error messages, users,...
+    + Have a look at the problem
+
+2. Reproduce the issue:
+    + Recreate the bug in maintaining environment
+
+3. Narrow down the cause:
+    + Use elimination (divide and conquer)
+    + Test hypotheses step by step
+
+4. Test the hypotheses:
+    + Try small changes, validate outcomes
+
+5. Implement solution:
+    + Apply a fix or maintenance
+
+6. Verify fix:
+    + Ensure the issue is fully resolved
+    + Retest the entire system
+
+7. Document the process:
+    + Record the cause, the solution, and steps taken for future use
