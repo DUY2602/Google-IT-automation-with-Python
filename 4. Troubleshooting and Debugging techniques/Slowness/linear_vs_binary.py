@@ -1,3 +1,5 @@
+# Slowness can also be reduced by the the logic and approach of our code
+
 import time
 
 def linear_search(list, key):
