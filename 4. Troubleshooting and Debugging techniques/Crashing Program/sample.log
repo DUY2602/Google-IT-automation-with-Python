@@ -1,0 +1,5 @@
+2025-09-07 13:00:22,205 - WARNING - This is a warning message
+2025-09-07 13:00:22,205 - ERROR - This is an error message
+2025-09-07 13:00:22,205 - DEBUG - This is a debug message
+2025-09-07 13:00:22,205 - INFO - This message will be written to app.log
+2025-09-07 13:00:22,205 - ERROR - This is an error with a custom format
